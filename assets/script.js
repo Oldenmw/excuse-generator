@@ -1,5 +1,5 @@
 var button = document.getElementById("btn");
-var excuseArr = ["We played nano blade into 6 man!", "I charged them off the map!", "We wanted to practice different comps!", "We weren't on main roles!"]
+var excuseArr = ["We played nano blade into 6 man!", "I charged them off the map!", "We wanted to practice different comps!", "We weren't on main roles!", "The sun was in my eyes!", "I was fasting so I played poorly."]
 var previousExcuse = excuseArr.length + 1;
 
 var displayExcuse = function(index) {
