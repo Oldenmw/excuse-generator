@@ -5,7 +5,10 @@ let activeTeam;
 var displayExcuse = function (team) {
   var excuseEl = document.querySelector("#excuse");
   excuseEl.textContent = "";
-  excuseEl.textContent = generateExcuse(team);
+  if (!activeTeam) {
+      excuseEl.textContent = "Pick your team from the list!"
+    }
+  else {excuseEl.textContent = generateExcuse(team)};
 };
 
 function generateExcuse(players) {
@@ -177,7 +180,7 @@ async function pageLoad() {
   /* If the user clicks anywhere outside the select box,
   then close all select boxes: */
   document.addEventListener("click", closeAllSelect);
-  button.addEventListener("click", () => displayExcuse(activeTeam.players));
+  button.addEventListener("click", () => displayExcuse(activeTeam?.players));
 }
 async function main() {
     await fillTeamData();

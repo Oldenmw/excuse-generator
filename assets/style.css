@@ -43,6 +43,7 @@ h3 {
     align-items: center;
     padding: 5px;
 }
+
 .custom-select {
     position: relative;
 }
@@ -51,6 +52,7 @@ h3 {
 }
 .select-selected {
     background-color: dodgerblue;
+    border-radius: 6px;
 }
 .select-selected:after {
     position: absolute;
@@ -72,10 +74,11 @@ h3 {
     border: 1px solid transparent;
     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
     cursor: pointer;
+    border-radius: 6px;
 }
 .select-items {
     position: absolute;
-    background-color: DodgerBlue;
+    background-color: rgba(0, 0, 0, 0.1);
     top: 100%;
     left: 0;
     right: 0;
@@ -86,6 +89,9 @@ h3 {
 }
 .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
+}
+.fill {
+    width: 100px;
 }
 button {
     background-color: #e7e7e7;
